@@ -57,7 +57,6 @@ function Board({ nrows=3, ncols=3, chanceLightStartsOn=50 }) {
   }
 
   function flipCellsAround(coord) {
-    console.log("RUNNING!")
     setBoard(oldBoard => {
       const [y, x] = coord.split("-").map(Number);
 
